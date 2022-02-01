@@ -25,7 +25,6 @@ export default function NotesReducer(state = initialState, action) {
         ...state,
         notes: [...state.notes.filter((note) => note.id !== action.payload.id)],
       };
-
     case ActionTypes.NEW_NOTE:
       return { ...state, notes: [...state.notes, action.payload] };
     case ActionTypes.EDIT_NOTE:

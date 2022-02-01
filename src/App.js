@@ -6,8 +6,8 @@ import { NotesTable } from './components/NotesTable';
 const App = () => {
   return (
     <div className='App'>
-      <h3> My Notes</h3>
-      <div styles={{ maxWidth: '70%', margin: 'auto' }}>
+      <h3>My Notes</h3>
+      <div style={{ maxWidth: '70%', margin: 'auto' }}>
         <div style={{ textAlign: 'right' }}>
           <NewNoteModal />
         </div>

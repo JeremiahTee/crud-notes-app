@@ -26,7 +26,7 @@ export const DeleteNote = async (dispatch, note) => {
 
 export const NewNote = async (dispatch, note) => {
   // api call
-  const response = [{ value: note, id: 7 }];
+  const response = { value: note, id: 7 };
 
   try {
     dispatch(ActionCreators.newNote(response));
@@ -37,7 +37,7 @@ export const NewNote = async (dispatch, note) => {
 
 export const EditNote = async (dispatch, note) => {
   // api call
-  const response = [{ value: note, id: 7 }];
+  const response = { value: note, id: 7 };
   try {
     dispatch(ActionCreators.editNote(response));
   } catch (error) {
