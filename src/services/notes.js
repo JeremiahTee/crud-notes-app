@@ -15,3 +15,11 @@ export const GetNotes = async (dispatch) => {
     console.log(error);
   }
 };
+
+export const DeleteNote = async (dispatch, note) => {
+  try {
+    dispatch(ActionCreators.deleteNote(note));
+  } catch (error) {
+    console.log(error);
+  }
+};
