@@ -23,3 +23,24 @@ export const DeleteNote = async (dispatch, note) => {
     console.log(error);
   }
 };
+
+export const NewNote = async (dispatch, note) => {
+  // api call
+  const response = [{ value: note, id: 7 }];
+
+  try {
+    dispatch(ActionCreators.newNote(response));
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const EditNote = async (dispatch, note) => {
+  // api call
+  const response = [{ value: note, id: 7 }];
+  try {
+    dispatch(ActionCreators.editNote(response));
+  } catch (error) {
+    console.log(error);
+  }
+};
