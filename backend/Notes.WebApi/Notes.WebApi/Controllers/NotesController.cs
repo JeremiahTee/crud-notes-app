@@ -35,7 +35,6 @@ namespace Notes.WebApi.Controllers
         {
             var newNote = _notesServices.CreateNote(note);
             return CreatedAtRoute("GetNote", new { newNote.Id }, newNote);
-
         }
 
         [HttpDelete("{id}")]
