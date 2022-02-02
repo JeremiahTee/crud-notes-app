@@ -19,7 +19,7 @@ export const NotesTable = () => {
         {notes.map((n) => (
           <tr key={n.id}>
             <td style={{ width: '3rem' }}>
-              <EditNoteModal note={n.value} />
+              <EditNoteModal note={n} />
             </td>
             <td style={{ width: '3rem' }}>
               <Button
